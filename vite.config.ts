@@ -1,6 +1,5 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-<<<<<<< HEAD
 import path from 'path'  // 新增：引入path模块
 
 export default defineConfig({
@@ -22,11 +21,7 @@ export default defineConfig({
       '@': path.resolve(__dirname, './src')
     }
   }
-})
-=======
+}
+)
 
-// https://vite.dev/config/
-export default defineConfig({
-  plugins: [vue()],
-})
->>>>>>> 193c745eb46044370b3337ad0e0a0d1b3ace5be1
+
