@@ -1,0 +1,1 @@
+export const test = "验证别名"

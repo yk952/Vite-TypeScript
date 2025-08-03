@@ -5,7 +5,14 @@ import { ref } from 'vue';
 
 defineProps<{ msg: string }>();
 
+type CartItem = { name: string; quantity: number };
+const cart = ref<CartItem[]>([]);
+
 const count = ref(0);
+
+const addToCart = (item: CartItem) => {
+  cart.value.push(item);
+};
 
 </script>
 

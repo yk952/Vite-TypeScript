@@ -2,6 +2,8 @@
 import HelloWorld from './components/HelloWorld.vue'
 import UserCard from './components/UserCard.vue';
 import Product from './components/Product.vue';
+import { test } from '@/components/Test' // 关键：使用 @ 开头的路径
+console.log(test)
 </script>
 
 <template>
