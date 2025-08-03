@@ -1,9 +1,14 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import UserCard from './components/UserCard.vue';
+import Product from './components/Product.vue';
 </script>
 
 <template>
+  <Product 
+    :product="{ id: 1, name: 'Laptop', price: 999, stock: 10 }" 
+    :is-on-sale="true"
+  />
   <div>
     <a href="https://vite.dev" target="_blank">
       <img src="/vite.svg" class="logo" alt="Vite logo" />
