@@ -24,6 +24,8 @@ const message = ref<string>("Hello AutoImport");
   <p>{{ message }}</p>
   <HelloWorld msg="Vite + Vue" />
   <UserCard />
+  <!-- 路由匹配到的组件会显示在这里 -->
+  <router-view />
 </template>
 
 <style scoped>
