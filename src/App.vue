@@ -4,6 +4,8 @@ import UserCard from './components/UserCard.vue';
 import Product from './components/Product.vue';
 import { test } from '@/components/Test' // 关键：使用 @ 开头的路径
 console.log(test)
+import {ref} from 'vue'
+const message = ref<string>("Hello AutoImport");
 </script>
 
 <template>
@@ -19,6 +21,7 @@ console.log(test)
       <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
+  <p>{{ message }}</p>
   <HelloWorld msg="Vite + Vue" />
   <UserCard />
 </template>

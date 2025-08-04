@@ -1,9 +1,16 @@
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'  // 新增：引入path模块
+import path from 'path' 
+import AutoImport from 'unplugin-auto-import/vite'
 
 export default defineConfig({
-  plugins: [vue()],
+  plugins: [
+    vue(),
+    AutoImport({
+      imports: ['vue'], // 自动导入vue的API
+      dts: 'src/auto-imports.d.ts' // 生成类型声明文件
+    })
+  ],
   server: {
     port: 3000,
     open: true,
