@@ -6,12 +6,16 @@ const routes = [
     path: '/',
     name: 'Home',
     // 懒加载组件（访问时才加载）
-    component: () => import('@/views/Home.vue')
+    component: () => import('../views/Home.vue')
   },
   {
     path: '/about',
     name: 'About',
     component: () => import('@/views/About.vue')
+  }
+    path: '/settings',
+    name: 'Settings',
+    component: () => import('..Settings.vue')
   }
 ]
 
